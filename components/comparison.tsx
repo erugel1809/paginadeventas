@@ -87,17 +87,12 @@ export function Comparison() {
           {/* Center Phone Image */}
           <div className="flex justify-center">
             <div className="w-64 h-96 bg-gradient-to-b from-gray-800 to-gray-900 rounded-3xl p-4 shadow-2xl">
-              <div className="w-full h-full bg-white rounded-2xl overflow-hidden">
-                <div className="bg-blue-600 text-white p-3 text-center font-bold">Nuevo</div>
-                <div className="p-4 space-y-3">
-                  <h4 className="font-bold text-gray-800">Web SiteTEC</h4>
-                  <p className="text-sm text-gray-600">tecnología</p>
-                  <p className="text-sm text-gray-600">en Guayaquil</p>
-                  <div className="bg-yellow-400 text-black p-2 rounded font-bold text-center">
-                    Venta y reparación de computadoras y repuestos
-                  </div>
-                  <button className="w-full bg-red-500 text-white py-2 rounded font-bold">VER TODA</button>
-                </div>
+              <div className="w-full h-full rounded-2xl overflow-hidden">
+                <img
+                  src="/web-store-tecnologico-guayaquil.jpg"
+                  alt="Web Store tecnológico en Guayaquil - Ejemplo de página de ventas"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -120,7 +115,7 @@ export function Comparison() {
         {/* CTA Button */}
         <div className="text-center mb-8">
           <div className="mb-8">
-            <div className="inline-flex items-center gap-4 bg-gradient-to-r from-yellow-400/20 to-yellow-600/20 backdrop-blur-sm border border-yellow-400/30 rounded-2xl p-6 shadow-2xl">
+            <div className="inline-flex items-center gap-4 bg-gradient-to-r from-yellow-400/20 to-yellow-600/20 backdrop-blur-sm border border-yellow-400/30 rounded-2xl p-6 shadow-2xl transform hover:scale-105 transition-all duration-200">
               <div className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold animate-pulse">
                 ¡OFERTA!
               </div>

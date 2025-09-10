@@ -4,7 +4,8 @@ import { Features } from "@/components/features"
 import { Comparison } from "@/components/comparison"
 import { LogoMarquee } from "@/components/logo-marquee"
 import Benefits from "@/components/benefits"
-import { AppverseFooter } from "@/components/appverse-footer"
+import { Testimonials } from "@/components/testimonials"
+import { FAQ } from "@/components/faq"
 import Script from "next/script"
 
 // ✅ Force static generation for low TTFB
@@ -15,36 +16,21 @@ export default function Page() {
   const pricingStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebPageElement",
-    "@id": "https://theskitbit.com/#pricing",
-    name: "Planes de Precios",
-    description:
-      "Planes de precios de Animación 3D - Paquetes Startup, Pro y Premium para todas las necesidades empresariales",
-    url: "https://theskitbit.com/#pricing",
+    "@id": "https://solutecstore.com/#pricing",
+    name: "Precios de Landing Pages",
+    description: "Landing pages altamente efectivas desde $125 - Optimizadas para conversión y móviles",
+    url: "https://solutecstore.com/#pricing",
     mainEntity: {
       "@type": "PriceSpecification",
-      name: "Servicios de Animación 3D",
-      description: "Servicios profesionales de animación 3D con tres niveles de precios",
+      name: "Servicios de Landing Pages",
+      description: "Páginas de ventas profesionales optimizadas con inteligencia artificial",
       offers: [
         {
           "@type": "Offer",
-          name: "Plan Startup",
-          price: "299",
+          name: "Landing Page Profesional",
+          price: "125",
           priceCurrency: "USD",
-          description: "Animación 3D de hasta 15s con 2 revisiones",
-        },
-        {
-          "@type": "Offer",
-          name: "Plan Pro",
-          price: "699",
-          priceCurrency: "USD",
-          description: "Animación 3D de hasta 25s con 4 revisiones",
-        },
-        {
-          "@type": "Offer",
-          name: "Plan Premium",
-          price: "2049",
-          priceCurrency: "USD",
-          description: "Animación 3D de 40-60s con revisiones ilimitadas",
+          description: "Landing page completa con diseño personalizado, optimización móvil y conexión WhatsApp",
         },
       ],
     },
@@ -54,30 +40,16 @@ export default function Page() {
   const pageStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://theskitbit.com/",
-    name: "Skitbit | Animación 3D Simple, Confiable y Escalable",
+    "@id": "https://solutecstore.com/",
+    name: "SolutecStore | Páginas de Ventas Altamente Efectivas para Vender Más",
     description:
-      "Desde lanzamientos de productos hasta campañas completas, Skitbit ofrece animación 3D rápida, consistente y diseñada para impresionar a tu audiencia.",
-    url: "https://theskitbit.com/",
+      "Diseñamos landings rápidas, persuasivas y listas para captar clientes desde el primer día. Optimizadas con inteligencia artificial.",
+    url: "https://solutecstore.com/",
     mainEntity: {
       "@type": "Organization",
-      name: "Skitbit",
-      url: "https://theskitbit.com",
-      sameAs: [
-        "https://twitter.com/theskitbit",
-        "https://www.youtube.com/@skitbitinternational",
-        "https://instagram.com/theskitbit",
-        "https://threads.com/theskitbit",
-      ],
+      name: "SolutecStore",
+      url: "https://solutecstore.com",
     },
-    hasPart: [
-      {
-        "@type": "WebPageElement",
-        "@id": "https://theskitbit.com/#pricing",
-        name: "Sección de Precios",
-        url: "https://theskitbit.com/#pricing",
-      },
-    ],
   }
 
   return (
@@ -89,7 +61,8 @@ export default function Page() {
         <Comparison />
         <LogoMarquee />
         <Benefits />
-        <AppverseFooter />
+        <Testimonials />
+        <FAQ />
       </main>
 
       {/* JSON-LD structured data */}

@@ -43,7 +43,7 @@ export function AppverseFooter() {
         <div className="flex justify-center">
           <Button
             asChild
-            className="rounded-full bg-yellow-400 px-6 py-2 text-sm font-medium text-black shadow-[0_0_20px_rgba(251,191,36,0.35)] hover:bg-yellow-300"
+            className="rounded-full bg-yellow-500 px-6 py-2 text-sm font-medium text-white shadow-[0_0_20px_rgba(251,191,36,0.35)] hover:bg-yellow-600"
           >
             <a href="https://wa.me/593986139278" target="_blank" rel="noopener noreferrer">
               Contáctanos
@@ -116,14 +116,14 @@ export function AppverseFooter() {
                 />
                 <span className="text-xl font-semibold text-yellow-300">Skitbit</span>
               </div>
-              <p className="max-w-sm text-sm text-neutral-400">{content.tagline}</p>
+              <p className="max-w-sm text-sm text-gray-200">{content.tagline}</p>
             </div>
 
             {/* Navigation */}
             <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-2">
               <div>
-                <h5 className="mb-2 text-xs font-semibold uppercase tracking-widest text-neutral-400">Navegación</h5>
-                <ul className="space-y-2 text-sm text-neutral-300">
+                <h5 className="mb-2 text-xs font-semibold uppercase tracking-widest text-gray-200">Navegación</h5>
+                <ul className="space-y-2 text-sm text-gray-100">
                   {["Inicio", "Características", "Testimonios", "Precios", "Blog", "Descargar"].map((item) => (
                     <li key={item}>
                       <Link href={`#${item.toLowerCase()}`} className="hover:text-yellow-300">
@@ -134,12 +134,10 @@ export function AppverseFooter() {
                 </ul>
               </div>
               <div>
-                <h5 className="mb-2 text-xs font-semibold uppercase tracking-widest text-neutral-400">
-                  Redes sociales
-                </h5>
-                <ul className="space-y-2 text-sm text-neutral-300">
+                <h5 className="mb-2 text-xs font-semibold uppercase tracking-widest text-gray-200">Redes sociales</h5>
+                <ul className="space-y-2 text-sm text-gray-100">
                   <li className="flex items-center gap-2">
-                    <Twitter className="h-4 w-4 text-neutral-400" />
+                    <Twitter className="h-4 w-4 text-gray-200" />
                     <a
                       href="https://twitter.com/theskitbit"
                       target="_blank"
@@ -151,7 +149,7 @@ export function AppverseFooter() {
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Youtube className="h-4 w-4 text-neutral-400" />
+                    <Youtube className="h-4 w-4 text-gray-200" />
                     <a
                       href="https://www.youtube.com/@skitbitinternational"
                       target="_blank"
@@ -163,7 +161,7 @@ export function AppverseFooter() {
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Instagram className="h-4 w-4 text-neutral-400" />
+                    <Instagram className="h-4 w-4 text-gray-200" />
                     <a
                       href="https://instagram.com/theskitbit"
                       target="_blank"
@@ -175,7 +173,7 @@ export function AppverseFooter() {
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
-                    <MessageCircle className="h-4 w-4 text-neutral-400" />
+                    <MessageCircle className="h-4 w-4 text-gray-200" />
                     <a
                       href="https://threads.com/theskitbit"
                       target="_blank"
@@ -192,7 +190,7 @@ export function AppverseFooter() {
           </div>
 
           {/* Bottom bar */}
-          <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-neutral-500 sm:flex-row">
+          <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-gray-300 sm:flex-row">
             <p>{content.copyright}</p>
             <div className="flex items-center gap-6">
               <Link href="/revisions" className="hover:text-yellow-300">

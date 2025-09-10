@@ -104,7 +104,7 @@ export default function LazyVideo({
       aria-label={ariaLabel}
       {...props}
     >
-      Your browser does not support the video tag.
+      <span className="text-white">Your browser does not support the video tag.</span>
     </video>
   )
 }
